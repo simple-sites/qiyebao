@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="border-left"><a name="info"></a>{{ "NAV-NEWS" | translate }}</h1>
+  <div class="row info">
+    <div class="col-12">
+      <table class="table table-hover">
+        <tbody>
+          <tr *ngFor="let item of news; let i = index">
+            <th scope="row"></th>
+            <td class="text-left">
+              <a href="{{ config.hash }}/news/item/{{ item.id }}/{{ page }}">{{
+                item.title
+              }}</a>
+            </td>
+            <td class="text-right">{{ item.date }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <app-paginator
+        url="/news/page/"
+        hash="{{ config.hash }}"
+        total="{{ total }}"
+        columns="{{ columns }}"
+        page="{{ page }}"
+        *ngIf="total > 1"
+      >
+      </app-paginator>
+    </div>
+  </div>
+</div>

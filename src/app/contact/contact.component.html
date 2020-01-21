@@ -1,0 +1,91 @@
+<div class="container">
+  <h1 class="border-left">
+    <a name="info"></a>{{ "NAV-CONTACT" | translate }}
+  </h1>
+  <div class="row info">
+    <div class="col-12">
+      <table class="table table-borderless  d-none d-sm-block" *ngIf="contact">
+        <tbody>
+          <tr>
+            <th scope="row">{{ contact.phone.key }}</th>
+            <td>{{ contact.phone.value }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ contact.fax.key }}</th>
+            <td>{{ contact.phone.value }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ contact.address.key }}</th>
+            <td>{{ contact.address.value }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ contact.email.key }}</th>
+            <td>{{ contact.email.value }}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{ contact.homepage.key }}</th>
+            <td>
+              <a href="{{ contact.homepage.value }}">{{
+                contact.homepage.value
+              }}</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">{{ contact.map.key }}</th>
+            <td>
+              <div id="map">
+                <img src="{{ contact.map.value }}" />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class="d-block d-sm-none" *ngIf="contact">
+        <li>
+          <ul>
+            <li>{{ contact.phone.key }}</li>
+            <li>{{ contact.phone.value }}</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>{{ contact.fax.key }}</li>
+            <li>{{ contact.phone.value }}</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>{{ contact.address.key }}</li>
+            <li>{{ contact.address.value }}</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>{{ contact.email.key }}</li>
+            <li>{{ contact.email.value }}</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>{{ contact.homepage.key }}</li>
+            <li>
+              <a href="{{ contact.homepage.value }}">{{
+                contact.homepage.value
+              }}</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>{{ contact.map.key }}</li>
+            <li>
+              <div id="map">
+                <img id="map-image" src="{{ contact.map.value }}" />
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

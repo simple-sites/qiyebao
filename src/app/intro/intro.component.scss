@@ -1,0 +1,24 @@
+
+caption {
+  caption-side: initial;;
+  padding-left: 20px;
+  color: #2564f9;
+  font-size: 2rem;
+  font-weight:  bolder;
+}
+
+.introduction {
+  position: relative;
+  h2 {
+    text-align: center;
+    color: #dc3545;
+  }
+  img {
+    width: 100%;
+    // height: 300px;
+  }
+}
+
+@import "../column.scss";
+
+@import "../app.component.mobile.scss";

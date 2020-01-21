@@ -1,5 +1,7 @@
 .social,
-.store {
+.store,
+.social-xs,
+.store-xs {
   position: fixed;
   right: 20px;
   top: 50%;
@@ -10,7 +12,7 @@
   }
 }
 
-.store {
+.store, .store-xs {
   left: 20px;
   right: auto;
 }
@@ -19,4 +21,25 @@
   img {
     width: 80px;
   }
+}
+
+.social-xs, .store-xs {
+  position: fixed;
+  background-color: black;
+  top: 40%;
+  left: 0;
+  right: 0;
+  a {
+    font-size: 3rem;
+  }
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+  opacity: 0.5;
+}
+
+.store-xs {
+  top: auto;
+  bottom: 0px;
 }

@@ -1,0 +1,16 @@
+@import "../column.scss";
+h2 {
+  position: relative;
+  text-align: center;
+  width: auto;
+  sub {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+  }
+}
+
+.content {
+  margin: 20px;
+}

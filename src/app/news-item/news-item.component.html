@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{{ config.hash }}/">{{ "NAV-HOME" | translate }}</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="{{ config.hash }}/news/page/{{ page }}">{{
+              "NAV-NEWS" | translate
+            }}</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ "NAV-NEWS-ITEM" | translate }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="item">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">
+        {{ item.title }}
+      </h2>
+    </div>
+    <div class="col-md-4 text-center">
+      发布时间：<span>{{ item.date }}</span>
+    </div>
+    <div class="col-md-4 text-center">
+      浏览次数：<span>{{ item.visited }}</span>
+    </div>
+    <div class="col-md-4 text-center">
+      作者：<span>{{ item.author }}</span>
+    </div>
+    <div class="col-md-12">
+      <div class="content">
+        {{ item.content }}
+      </div>
+    </div>
+  </div>
+</div>

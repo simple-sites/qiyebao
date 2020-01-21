@@ -1,0 +1,26 @@
+<div class="container">
+  <h1 class="border-left">
+    <a name="news"></a>{{ "NAV-FACTORY" | translate }}
+  </h1>
+  <div class="row">
+    <div class="col-md-6 col-sm-12" *ngFor="let item of factories; let i = index">
+      <div class="card">
+        <img src="{{ item.url }}" class="card-img-top" alt="{{ item.title }}" />
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ item.title }}</h5>
+        </div>
+      </div>
+    </div>
+    <app-paginator
+    url="/factory/page/"
+    hash="{{config.hash}}"
+    total="{{ total }}"
+    columns="{{ columns }}"
+    page="{{ page }}"
+    *ngIf = "total > 1"
+
+  >
+  </app-paginator>
+  </div>
+  <hr />
+</div>
