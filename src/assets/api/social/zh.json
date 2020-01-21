@@ -1,0 +1,62 @@
+[
+  {
+    "title": "QQ聊天",
+    "icon": ["fab", "qq"],
+    "class": "text-primary",
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "微信聊天",
+    "class": "text-success",
+    "icon": ["fab", "weixin"],
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "推特",
+    "class": "text-info",
+
+    "icon": ["fab", "twitter"],
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "微博关注",
+    "class": "text-danger",
+
+    "icon": ["fab", "weibo"],
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "脸书",
+    "class": "text-primary",
+
+    "icon": ["fab", "facebook"],
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "电话直拔",
+    "class": "text-second",
+
+    "icon": ["fas", "phone"],
+    "tip": "+86 013582735228",
+    "url": "tel:+86 013582735228"
+  },
+  {
+    "title": "传真资料",
+    "class": "text-warning",
+
+    "icon": ["fas", "fax"],
+    "tip": "+86 013582735228",
+    "url": "fax:+86 013582735228"
+  },
+  {
+    "title": "天眼查",
+
+    "image": "assets/images/tianyancha.jpeg",
+    "url": "https://www.tianyancha.com/company/1320234911"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "name": "Zhejiang Rehone Plastic Co., Ltd.",
+  "phone": {
+    "key": "Telephone : ",
+    "value": "+86 0576-83882759"
+  },
+  "fax": {
+    "key": "Fax : ",
+    "value": "+86 0576-83989636"
+  },
+  "address": {
+    "key": "Address : ",
+    "value": "Tiantai County Fu Xi Jie Dao Wang Qiucun"
+  },
+  "postcode": {
+    "key": "Post code : ",
+    "value": "317200"
+  },
+  "email": {
+    "key": "Email : ",
+    "value": "f759@263.net, pvb@pvbfilm.com"
+  },
+  "homepage": {
+    "key": "Home Page : ",
+    "value": "http://www.pvbfilm.com"
+  },
+  "map": {
+    "key": "Map :",
+    "value": "assets/vendor/map.png"
+  }
+}

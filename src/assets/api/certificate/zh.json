@@ -1,0 +1,19 @@
+{
+  "page": 1,
+  "total": 1,
+  "limit": 10,
+  "certificates": [
+    {
+      "url": "assets/vendor/zs1.jpg",
+      "title": "资质1"
+    },
+    {
+      "url": "assets/vendor/zs2.jpg",
+      "title": "资质2"
+    },
+    {
+      "url": "assets/vendor/zs4.jpg",
+      "title": "资质3"
+    }
+  ]
+}

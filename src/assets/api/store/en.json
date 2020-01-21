@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Alibaba",
+    "icon": "assets/images/alibaba-512.png",
+    "url": "https://www.alibaba.com"
+  },
+  {
+    "name": "Tmall",
+    "icon": "assets/images/tianmao.png",
+    "url": "https://www.tmall.com"
+  },
+  {
+    "name": "Taobao",
+    "icon": "assets/images/taobao.jpg",
+    "url": "https://www.taobao.com"
+  },
+  {
+    "name": "Amazon",
+    "icon": "assets/images/amazon.png",
+    "url": "https://www.amazon.com"
+  }
+]

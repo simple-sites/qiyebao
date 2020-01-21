@@ -1,0 +1,23 @@
+{
+  "page": 1,
+  "total": 10,
+  "limit": 10,
+  "factories": [
+    {
+      "url": "assets/vendor/f1.jpg",
+      "title": "资质1"
+    },
+    {
+      "url": "assets/vendor/f2.jpg",
+      "title": "资质2"
+    },
+    {
+      "url": "assets/vendor/f3.png",
+      "title": "资质3"
+    },
+    {
+      "url": "assets/vendor/f4.jpg",
+      "title": "资质4"
+    }
+  ]
+}

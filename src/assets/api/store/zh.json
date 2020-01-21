@@ -1,0 +1,22 @@
+[
+  {
+    "name": "阿里巴巴",
+    "icon": "assets/images/alibaba-512.png",
+    "url": "https://www.alibaba.com"
+  },
+  {
+    "name": "天猫商城",
+    "icon": "assets/images/tianmao.png",
+    "url": "https://www.tmall.com"
+  },
+  {
+    "name": "淘宝商城",
+    "icon": "assets/images/taobao.jpg",
+    "url": "https://www.taobao.com"
+  },
+  {
+    "name": "亚马逊",
+    "icon": "assets/images/amazon.png",
+    "url": "https://www.amazon.com"
+  }
+]

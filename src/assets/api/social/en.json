@@ -1,0 +1,62 @@
+[
+  {
+    "title": "QQ IM",
+    "icon": ["fab", "qq"],
+    "class": "text-primary",
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "Wechat",
+    "class": "text-success",
+    "icon": ["fab", "weixin"],
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "Twitter",
+    "class": "text-info",
+
+    "icon": ["fab", "twitter"],
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "Weibo",
+    "class": "text-danger",
+
+    "icon": ["fab", "weibo"],
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "Facebook",
+    "class": "text-primary",
+
+    "icon": ["fab", "facebook"],
+    "tip": "<img src=\"assets/vendor/social/weixin.jpg\" />",
+    "url": ""
+  },
+  {
+    "title": "Telephone",
+    "class": "text-second",
+
+    "icon": ["fas", "phone"],
+    "tip": "+86 013582735228",
+    "url": "tel:+86 013582735228"
+  },
+  {
+    "title": "Faxing",
+    "class": "text-warning",
+
+    "icon": ["fas", "fax"],
+    "tip": "+86 013582735228",
+    "url": "fax:+86 013582735228"
+  },
+  {
+    "title": "Tianyancha",
+
+    "image": "assets/images/tianyancha.jpeg",
+    "url": "https://www.tianyancha.com/company/1320234911"
+  }
+]
