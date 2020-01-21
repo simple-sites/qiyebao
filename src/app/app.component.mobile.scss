@@ -1,0 +1,29 @@
+@media (max-width: 575.98px) {
+  .logo {
+    width: 100px;
+  }
+  .navbar-brand {
+    white-space: normal;
+    font-size: 0.5rem;
+  }
+
+  table {
+    tr,
+    td {
+      white-space: pre-wrap;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  ul, li {
+    color: #333;
+    list-style: none;
+    padding: 0;
+  }
+
+  #map-image {
+    width: 100%;
+  }
+}

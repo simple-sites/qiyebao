@@ -1,0 +1,53 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{{intro.url}}" *ngIf="intro"
+      ><img class="logo" alt="logo" src="{{ intro.logo }}"/> {{ "NAV-NAME" | translate }}</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-right">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="btn btn-link btn-sm text-muted"
+            (click)="setCurrentHomePage()"
+          >
+            <fa-icon [icon]="faHome"></fa-icon
+            >{{ "NAV-FRONTPAGE" | translate }}</a
+          >
+          <a class="btn btn-link btn-sm text-muted" (click)="addCurrent()">
+            <fa-icon [icon]="faBookmark"></fa-icon
+            >{{ "NAV-FAVORITE" | translate }}</a
+          >
+        </li>
+      </ul>
+      <select
+        class="selectpicker"
+        data-width="auto"
+        data-style="btn-light btn-sm"
+      >
+        <option
+          value="en"
+          data-content='<span class="flag-icon flag-icon-us"></span> English '
+          >English</option
+        >
+        <!-- <option value="mx" data-content='<span class="flag-icon flag-icon-mx"></span> Español '>Español</option> -->
+        <option
+          value="zh"
+          data-content='<span class="flag-icon flag-icon-cn"></span> 中文 '
+          >中文</option
+        >
+      </select>
+    </div>
+  </nav>
+</div>
