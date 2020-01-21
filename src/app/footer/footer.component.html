@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row footer" *ngIf="company">
+    <div class="col-12">
+      <p>
+        2006-2013 {{ "COPYRIGHTS" | translate }} &copy;
+        {{ company.name }} &trade;
+      </p>
+    </div>
+    <div class="col-md-6 col-sm-12 text-left">
+      <p>
+        <span
+          ><fa-icon [icon]="faMapMarker"></fa-icon
+          >{{ company.address.key }}</span
+        >{{ company.address.value }}
+      </p>
+      <p>
+        <span><fa-icon [icon]="faPhone"></fa-icon>{{ company.phone.key }}</span
+        >{{ company.phone.value }}
+      </p>
+      <p>
+        <span><fa-icon [icon]="faFax"></fa-icon>{{ company.fax.key }}</span
+        >{{ company.fax.value }}
+      </p>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <p class="text-left">
+        <a name="Admin Entrance" href="/admin">{{
+          "ADMIN-ENTRANCE" | translate
+        }}</a
+        ><br />
+        {{ "TECH-SUPPORT" | translate
+        }}<a name="Tech support" href="https://t1bao.com">{{
+          "TECH-SUPPORTER" | translate
+        }}</a
+        ><br />
+        {{ "STATISTICS" | translate
+        }}<a href="aaa" name="cnzz"><img alt="cnzz indicator" src="assets/images/cnzz.gif"/></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container beian" *ngIf="beian">
+  <div class="row">
+    <div class="col-12 text-center">
+      <img alt="beian image" src="{{ beian.image }}" />
+      <a
+        name ="beian url"
+        class="text-decoration-none text-muted"
+        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{
+          beian.code
+        }}"
+        *ngIf="beian"
+      >
+        {{ beian.authority }}
+        {{ beian.code }}号</a
+      >
+    </div>
+  </div>
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  async=""
+  src="https://www.googletagmanager.com/gtag/js?id=UA-140048281-1"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "UA-140048281-1");
+</script>
