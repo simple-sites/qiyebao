@@ -9,6 +9,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
+import { FloatingBarComponent } from './floating-bar/floating-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { ConfigService } from './config.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -22,6 +23,7 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     FooterComponent,
+    FloatingBarComponent,
     HeaderComponent,
   ],
   imports: [

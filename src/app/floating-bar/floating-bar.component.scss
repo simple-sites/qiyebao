@@ -1,0 +1,22 @@
+.social,
+.store {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  margin-top: -40px;
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.store {
+  left: 20px;
+  right: auto;
+}
+
+::ng-deep .tooltip-inner {
+  img {
+    width: 80px;
+  }
+}
