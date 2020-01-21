@@ -8,6 +8,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { FloatingBarComponent } from './floating-bar/floating-bar.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,6 +23,7 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     FooterComponent,
     FloatingBarComponent,
     HeaderComponent,

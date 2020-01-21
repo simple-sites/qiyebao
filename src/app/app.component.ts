@@ -2,14 +2,16 @@ import { Component, OnInit, AfterViewInit } from "@angular/core";
 
 import { TranslateService, LangChangeEvent } from "@ngx-translate/core";
 import { Title } from "@angular/platform-browser";
+import { Router, NavigationStart } from "@angular/router";
 import { HttpClient } from '@angular/common/http';
 import { ConfigService } from './config.service';
 
+declare var particlesJS: any;
 declare var $: any;
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit, AfterViewInit {
   supportedLanguages = ["en", "zh"];
@@ -24,17 +26,34 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor(
     private translate: TranslateService,
     private titleService: Title,
+    private router: Router,
     private http: HttpClient,
     public config: ConfigService
   ) {
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      console.log('language changed');
       translate.get("TITLE").subscribe((res: string) => {
         titleService.setTitle(res);
       });
       this.config.request("assets/api/intro", (data) => {
         this.intro = data;
       });
+    });
+    router.events.subscribe(event => {
+      // console.log(event);
+      if (event instanceof NavigationStart) {
+        let tab = event.url.substr(1);
+        tab = tab.split("/")[0];
+        if (tab) {
+          this.url = tab;
+        } else {
+          this.url = "home";
+        }
+        if (this.url === "home") {
+          // particlesJS.load("particles-js", "assets/particles.json", () => {
+             // console.log("callback - particles.js config loaded");
+          // });
+        }
+      }
     });
   }
   getLocaleString() {

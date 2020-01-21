@@ -1,0 +1,21 @@
+h1 {
+  border-width: 10px !important;
+  border-color: #dc3545 !important;
+  margin-left: 16px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+table {
+  tbody {
+    tr {
+      color: #999;
+      th {
+        text-align: right;
+        font-weight: normal;
+      }
+    }
+  }
+}

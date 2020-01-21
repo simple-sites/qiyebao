@@ -1,0 +1,44 @@
+<div class="container">
+  <h1 class="border-left">
+    <a name="production"></a>{{ "NAV-PRODUCTS" | translate }}
+  </h1>
+  <div class="row">
+    <div
+      class="col-sm-12 col-md-4 text-center"
+      *ngFor="let item of products; let i = index"
+    >
+      <div class="card" [ngClass]="{ active: i == 0 }">
+        <img
+          src="{{ item.image }}"
+          class="card-img-top"
+          alt="{{ item.title }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text">{{ item.intro }}</p>
+          <a href="{{ item.url }}" class="btn btn-primary">{{"BUY" | translate}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="border-left">
+    <a name="news"></a>{{ "NAV-NEWS" | translate }}
+  </h1>
+  <div class="row">
+    <table class="table table-hover">
+      <tbody>
+        <tr *ngFor="let item of news; let i = index">
+          <th scope="row"></th>
+          <td class="text-left">
+            <a href="{{ hash }}/news/item/{{ item.id }}/{{ page }}">{{
+              item.title
+            }}</a>
+          </td>
+          <td class="text-right">{{ item.date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
