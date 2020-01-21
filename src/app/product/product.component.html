@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="border-left">
+    <a name="production"></a>{{ "NAV-PRODUCTS" | translate }}
+  </h1>
+
+  <div class="row">
+    <div
+      class="col-sm-12 col-md-4 text-center"
+      *ngFor="let item of products; let i = index"
+    >
+      <div class="card" [ngClass]="{ active: i == 0 }">
+        <img
+          src="{{ item.image }}"
+          class="card-img-top"
+          alt="{{ item.title }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text">{{ item.intro }}</p>
+          <a href="{{ item.url }}" class="btn btn-primary">{{"BUY" | translate}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-12 text-right">
+      <app-paginator
+        url="/product/page/"
+        hash="{{ hash }}"
+        total="{{ total }}"
+        columns="{{ columns }}"
+        page="{{ page }}"
+        *ngIf = "total > 1"
+      >
+      </app-paginator>
+    </div>
+  </div>
+</div>

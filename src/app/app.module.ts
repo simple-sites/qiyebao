@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { FloatingBarComponent } from './floating-bar/floating-bar.component';
 import { HeaderComponent } from './header/header.component';
+import { ProductComponent } from './product/product.component';
+import { PaginatorComponent } from './paginator/paginator.component';
 import { ConfigService } from './config.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -27,6 +29,8 @@ export function createTranslateLoader(http: HttpClient) {
     FooterComponent,
     FloatingBarComponent,
     HeaderComponent,
+    ProductComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,
