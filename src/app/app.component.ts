@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit } from "@angular/core";
-
 import { TranslateService, LangChangeEvent } from "@ngx-translate/core";
 import { Title } from "@angular/platform-browser";
 import { Router, NavigationStart } from "@angular/router";

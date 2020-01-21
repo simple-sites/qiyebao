@@ -12,12 +12,13 @@
       <fa-icon
         title="{{ item.title }}"
         [ngClass]="item.class"
-        [icon]=item.icon
+        [icon]="item.icon"
         *ngIf="item.icon"
       ></fa-icon>
       <img
         src="{{ item.image }}"
         title="{{ item.title }}"
+        alt="{{ item.title }}"
         *ngIf="item.image"
       />
     </a>
@@ -35,7 +36,56 @@
       target="_blank"
       title="{{ store.name }}"
     >
-      <img src="{{ store.icon }}" />
+      <img
+        alt="Image for online store: {{ store.name }}"
+        src="{{ store.icon }}"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="social-xs d-block d-sm-none">
+  <div class="btn-group-horizontal text-center">
+    <a
+      type="button"
+      class="btn btn-outline "
+      data-toggle="tooltip"
+      data-placement="left"
+      data-html="true"
+      data-title="{{ item.tip }}"
+      *ngFor="let item of socials"
+    >
+      <fa-icon
+        title="{{ item.title }}"
+        [ngClass]="item.class"
+        [icon]="item.icon"
+        *ngIf="item.icon"
+      ></fa-icon>
+      <img
+        alt="{{ item.title }}"
+        src="{{ item.image }}"
+        title="{{ item.title }}"
+        *ngIf="item.image"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="store-xs d-block d-sm-none">
+  <div class="btn-group-horizontal text-center">
+    <a
+      type="button"
+      class="btn btn-outline"
+      *ngFor="let store of stores"
+      rel="noreferrer"
+      href="{{ store.url }}"
+      target="_blank"
+      title="{{ store.name }}"
+    >
+      <img
+        alt="Image for online store: {{ store.name }}"
+        src="{{ store.icon }}"
+      />
     </a>
   </div>
 </div>
